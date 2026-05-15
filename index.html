@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя Визитка</title>
+    <style>
+        /* Основные стили для внешнего вида */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+            max-width: 300px;
+        }
+
+        /* Стили кнопок */
+        .btn {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            color: white;
+        }
+
+        .linkedin {
+            background-color: #0077b5;
+        }
+
+        .cv {
+            background-color: #2ecc71;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Тень для объема */
+        .btn {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- ЗАМЕНИТЕ НА ВАШИ ИМЯ И ФАМИЛИЮ -->
+        <h1>Имя Фамилия</h1>
+    </header>
+
+    <div class="container">
+        <!-- ЗАМЕНИТЕ ССЫЛКИ НА ВАШИ -->
+        <a href="https://www.linkedin.com/in/ВАШ_ПРОФИЛЬ" class="btn linkedin" target="_blank">LinkedIn</a>
+        <a href="ССЫЛКА_НА_ВАШ_PDF_CV" class="btn cv" target="_blank">CV (Резюме)</a>
+    </div>
+
+</body>
+</html>
