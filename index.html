@@ -1,95 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя Визитка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Поляков Денис - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
     <style>
-        /* Основные стили для внешнего вида */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            margin: 0;
-            background-color: #EDECE8;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
+            background-color: #EAEAEA;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
 
         h1 {
-            font-size: 2rem;
-            margin: 0;
-            color: #2c3e50;
-        }
-
-        h2 {
-            font-size: 1rem;
-            margin: 0;
-            color: #2c3e50;
+            font-weight: 700;
+            font-size: 32px;
+            color: #000000;
+            margin-bottom: 80px;
+            text-align: center;
         }
 
         .container {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            width: 80%;
-            max-width: 300px;
+            gap: 16px;
+            width: 90%;
+            max-width: 340px;
         }
 
-        /* Стили кнопок */
         .btn {
-            display: block;
-            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 72px;
+            border-radius: 24px;
             text-decoration: none;
-            text-align: center;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 24px;
+            font-weight: 600;
+            transition: transform 0.1s ease, opacity 0.2s ease;
+            box-sizing: border-box;
             color: white;
         }
 
+        .btn:active {
+            transform: scale(0.97);
+            opacity: 0.9;
+        }
+
         .linkedin {
-            background-color: #0077b5;
+            background-color: #5154F0;
         }
 
         .cv {
-            background-color: #E2D694;
+            background-color: #4D4D4D;
         }
 
-        .btn:active {
-            transform: scale(0.98);
-        }
-
-        /* Тень для объема */
-        .btn {
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        /* Убираем синее выделение при нажатии в Safari */
+        * {
+            -webkit-tap-highlight-color: transparent;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <!-- ЗАМЕНИТЕ НА ВАШИ ИМЯ И ФАМИЛИЮ -->
-        <h1>Поляков Денис</h1>
-        <h2>Запрошую до перегляду свого профілю</h2>
-    </header>
+    <h1>Поляков Денис</h1>
 
     <div class="container">
-        <!-- ЗАМЕНИТЕ ССЫЛКИ НА ВАШИ -->
         <a href="www.linkedin.com/in/denys-poliakov-6b426436b" class="btn linkedin" target="_blank" rel="noopener noreferrer">
-    <div class="icon-box"></div>
-    LinkedIn
-</a>
-        <a href="CV Denys Poliakov .pdf" class="btn cv" target="_blank">CV (Резюме)</a>
-    </div>
+            LinkedIn
+        </a>
 
-</body>
-</html>
+        <a href="CV Denys Poliakov .pdf" class="btn cv" target="_blank" rel="noopener noreferrer">
+            Подивитися
