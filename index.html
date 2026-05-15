@@ -19,20 +19,25 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        /* Контейнер для текста, чтобы они не разлетались слишком далеко */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
         h1 {
             font-weight: 700;
             font-size: 32px;
             color: #000000;
-            margin-bottom: 80px;
-            text-align: center;
+            margin: 0 0 10px 0;
         }
 
         h2 {
-            font-weight: 700;
-            font-size: 25px;
-            color: #000000;
-            margin-bottom: 80px;
-            text-align: center;
+            font-weight: 600;
+            font-size: 18px; /* Уменьшил, чтобы лучше смотрелось на мобильном */
+            color: #666;
+            margin: 0;
+            padding: 0 20px;
         }
 
         .container {
@@ -50,7 +55,7 @@
             height: 72px;
             border-radius: 24px;
             text-decoration: none;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
             transition: transform 0.1s ease, opacity 0.2s ease;
             box-sizing: border-box;
@@ -70,7 +75,6 @@
             background-color: #4D4D4D;
         }
 
-        /* Убираем синее выделение при нажатии в Safari */
         * {
             -webkit-tap-highlight-color: transparent;
         }
@@ -78,12 +82,20 @@
 </head>
 <body>
 
-    <h1>Поляков Денис</h1>
-    <h2>Запрошую до перегляду свого профілю</h2>
+    <header>
+        <h1>Поляков Денис</h1>
+        <h2>Запрошую до перегляду свого профілю</h2>
+    </header>
+
     <div class="container">
-        <a href="www.linkedin.com/in/denys-poliakov-6b426436b" class="btn linkedin" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/denys-poliakov-6b426436b" class="btn linkedin" target="_blank" rel="noopener noreferrer">
             LinkedIn
         </a>
 
         <a href="CV Denys Poliakov .pdf" class="btn cv" target="_blank" rel="noopener noreferrer">
-            Подивитися
+            Подивитися CV
+        </a>
+    </div>
+
+</body>
+</html>
